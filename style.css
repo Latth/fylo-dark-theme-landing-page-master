@@ -169,31 +169,93 @@ PRODUCTİVE SECTİON
 
 #comments .container {
     display: flex;
+    justify-content: center;
 }
 
 .comment-item {
-    width: 30%;
+    width: 25%;
     color: #fff;
     text-align: left;
     background-color:hsl(219, 30%, 18%);
     padding: 3rem 2rem 2rem 2rem;
     box-shadow: 4px 4px 0 4px rgba(0, 0, 0, .1);
     margin-right: 3%;
+    position: relative;
+    z-index: 7;
 }
 .comment-footer {
     display: flex;
     align-items: center;
     margin-top: 2rem;
 }
+.comment-footer h6{
+    font-size: 1rem;
+}
 .comment-footer img {
-    width: 25px;
+    width: 30px;
     border-radius: 100%;
     margin-right: 1rem;
 }
 .comment-author p{
-    font-size: .5rem;
+    font-size: .8rem;
     margin-top: .2rem;
     color: rgba(255, 255, 255, .6);
 }
-.comment-item:nth-child(3) {
+.comment-item:nth-child(1)::before {
+    content: url("images/bg-quotes.png");
+    position: absolute;
+    top: -2.5rem;
+    left: -1rem;
+    z-index: 4;
+}
+
+
+/* 
+
+Access form
+
+*/
+
+#early-access {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    color: #fff;
+    padding: 3rem 5rem 2rem 5rem;
+    background: hsl(217, 28%, 15%);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 0 4px rgba(0, 0, 0, .1);
+}
+#early-access h3 {
+    font-size: 2rem;
+}
+#early-access p {
+    margin: 1.5rem 0;
+}
+#access-form {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 3rem;
+}
+#early-access #access-form input {
+    width: 70%;
+    display: inline-block;
+    margin-right: 2%;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    border: none;
+    padding: .6rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+#early-access #access-form button {
+    width: 25%;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background: hsl(198, 60%, 50%);
+    color: #fff;
+    font-size: 1rem;
+    border-radius:2rem;
+    border: none;
 }
