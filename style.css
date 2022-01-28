@@ -91,6 +91,11 @@ WELCOME SEC
     border-radius: 2rem;
     display: inline-block;
     margin-top: 2rem;
+    transition: .2s;
+}
+#welcome a:hover {
+    background: hsl(176, 68%, 64%);
+    transition: .2s;
 }
 
 /* 
@@ -98,8 +103,6 @@ WELCOME SEC
 ABOUT SECTION
 
 */
-#about {
-}
 #about .container {
     display:flex;
     align-items: center;
@@ -162,6 +165,12 @@ PRODUCTİVE SECTİON
     border: none;
     outline: none;
     border-bottom: 1px solid hsl(176, 68%, 64%);
+    transition: .2s;
+}
+#productive a:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: .2s;
 }
 
 
@@ -225,6 +234,7 @@ Access form
     background: hsl(217, 28%, 15%);
     border-radius: 1rem;
     box-shadow: 4px 4px 0 4px rgba(0, 0, 0, .1);
+    transform: translateY(40%);
 }
 #early-access h3 {
     font-size: 2rem;
@@ -245,9 +255,10 @@ Access form
     font-size: 1.4rem;
     border-radius: 2rem;
     border: none;
-    padding: .6rem;
-    text-align: center;
+    padding: .6rem 2rem;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
+    outline: none;
 }
 #early-access #access-form button {
     width: 25%;
@@ -258,4 +269,80 @@ Access form
     font-size: 1rem;
     border-radius:2rem;
     border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+#early-access #access-form button:hover {
+    background: hsl(176, 68%, 64%);
+    transition: .2s;
+}
+#early-error {
+    text-align: left;
+    font-size: .8rem;
+    margin-left: 5%;
+    color: hsl(0, 100%, 63%);
+    margin-top: .2rem;
+    visibility: hidden;
+}
+
+/*
+
+
+Footer
+
+
+*/
+
+footer {
+    margin: auto;
+    padding: 15rem 0 5rem 0;
+    color: #fff;
+    background:hsl(216, 53%, 9%);
+}
+
+.footer-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+#location {
+    max-width: 25%;
+}
+#links-footer {
+    display: flex;
+    align-items: flex-start;
+    padding: 0rem 1rem;
+    box-sizing: border-box;
+    
+}
+#links-footer div:nth-child(1) {
+    margin-right: 3rem;
+}
+#links-footer a {
+    display: block;
+    margin-bottom: 1rem;
+    color: #fff;
+    
+}
+#links-footer a:hover{
+    font-weight: bold;
+}
+#social-footer a {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1rem;
+    padding: .5rem .8rem;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    transition: .2s;
+}
+#social-footer a:nth-child(1){
+    padding: .5rem 1rem;
+}
+#social-footer a:hover {
+    color: hsl(176, 68%, 64%);
+    border-color: hsl(176, 68%, 64%);
+    transition: .2s;
 }

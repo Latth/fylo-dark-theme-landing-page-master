@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -150,13 +150,49 @@
 
       <form id="access-form">
         <input type="email" name="email" id="email">
-        <button type="submit">Get Started For Free</button>
+        <button id="earlyBtn" type="submit">Get Started For Free</button>
       </form>
+      <div id="early-error">Please enter a valid email address</div>
     </div>
   </main>
 
   <footer>
-    
+    <div class="container">
+      <img src="images/logo.svg" alt="Fylo logo">
+      <div class="footer-details">
+        <div id="location">
+          <img src="images/icon-location.svg" alt="location icon">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eum ipsa fugiat aut quibusdam, tempore culpa sint suscipit quasi itaque qui nisi repellat sapiente.
+        </div>
+
+        <div id="contact-footer">
+          <p><img src="images/icon-phone.svg" alt="phone icon"> +1-543-123-4567</p>
+          <p><img src="images/icon-email.svg" alt="email icon"> example@fylo.com</p>
+        </div>
+
+        <div id="links-footer">
+          <div>
+            <a href="#">About Us</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#"></a>
+            <a href="#">Blog</a>
+          </div>
+          <div>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+          </div>
+        </div>
+
+        <div id="social-footer">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+      </div>
+    </div>
   </footer>
   <!-- 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -180,5 +216,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script src="app.js"></script>
 </body>
 </html>
