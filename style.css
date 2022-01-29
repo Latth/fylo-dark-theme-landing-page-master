@@ -12,6 +12,16 @@ font-family: 'Raleway', sans-serif; */
 html {
     font-size: 14px;
 }
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 900px){
+    html {
+        font-size: 12px;
+    }
+}
 
 body {
     background: hsl(218, 28%, 13%);
@@ -34,12 +44,38 @@ section {
     font-family: 'Open Sans', sans-serif;
     padding: 10rem 0;
 }
+@media screen and (max-width: 400px) {
+    section {
+        padding: 7rem 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    section {
+        padding: 9rem;
+    }
+}
 
 #bg-curved {
     position: absolute;
     bottom: 0;
     width: 100%;
     z-index: 0;
+}
+#bg-curved-mobile {
+    width: 100%;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 400px) {
+    #bg-curved {
+        display: none;
+    }
+    #bg-curved-mobile{
+        display: block;
+    }
 }
 
 /* Styles */
@@ -62,6 +98,14 @@ nav ul li a{
     color: #fff;
 }
 
+@media screen and (max-width: 400px) {
+    header img{
+        width: 10rem
+    }
+    nav ul li {
+        margin-left: 2rem;
+    }
+}
 /* 
 
 WELCOME SEC
@@ -87,8 +131,11 @@ WELCOME SEC
 #welcome a {
     color: #fff;
     background: hsl(198, 60%, 50%);
-    padding: .7rem 4rem;
-    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.5rem 8rem;
+    margin-top: 3rem;
+    border-radius: 3rem;
     display: inline-block;
     margin-top: 2rem;
     transition: .2s;
@@ -97,6 +144,37 @@ WELCOME SEC
     background: hsl(176, 68%, 64%);
     transition: .2s;
 }
+
+@media screen and (max-width: 400px) {
+    #main-img {
+        width: 100%;
+    }
+    #welcome {
+        padding: 0;
+    }
+    #welcome h1 {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+    #welcome a{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1.5rem 8rem;
+        margin-top: 3rem;
+        border-radius: 3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #welcome a{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1.5rem 8rem;
+        margin-top: 3rem;
+        border-radius: 3rem;
+    }
+}
+
 
 /* 
 
@@ -132,7 +210,37 @@ ABOUT SECTION
 .bottom-abt {
     margin-top: 10rem;
 }
+@media screen and (max-width: 400px) {
+    #about {
+        padding-top: 10rem;
+    }
+    .top-about {
+        flex-direction: column;
+    }
+    .bottom-abt {
+        margin-top: 0rem;
+    }
+    #about .about-item {
+        width: 100%;
+        margin-bottom: 7rem;
+    }
+    #about .about-item img {
+        width: 20%;
+    }
+    .about-item p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+}
 
+@media screen and (max-width: 900px) {
+    #about .about-item {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+}
 
 /* 
 
@@ -173,12 +281,26 @@ PRODUCTİVE SECTİON
     transition: .2s;
 }
 
+@media screen and (max-width: 400px) {
+    #productive .container {
+        flex-direction: column;
+    }
+    #productive img {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+    #productive a {
+        font-size: 1.3rem;
+    }
+}
 
 /*  COMMENTS */
 
 #comments .container {
     display: flex;
     justify-content: center;
+    
 }
 
 .comment-item {
@@ -190,7 +312,6 @@ PRODUCTİVE SECTİON
     box-shadow: 4px 4px 0 4px rgba(0, 0, 0, .1);
     margin-right: 3%;
     position: relative;
-    z-index: 7;
 }
 .comment-footer {
     display: flex;
@@ -215,7 +336,31 @@ PRODUCTİVE SECTİON
     position: absolute;
     top: -2.5rem;
     left: -1rem;
-    z-index: 4;
+    z-index: 3;
+}
+
+@media screen and (max-width: 400px) {
+    #comments .container {
+        flex-direction: column;
+    }
+    .comment-item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    #comments .container {
+        flex-direction: column;
+    }
+    .comment-item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+    .comment-item:nth-child(3) {
+        margin-bottom: 0rem;
+    }
 }
 
 
@@ -284,6 +429,63 @@ Access form
     margin-top: .2rem;
     visibility: hidden;
 }
+@media screen and (max-width: 400px) {
+    #early-access {
+        width: 90%;
+    }
+    #early-access #access-form {
+        flex-direction: column;
+    }
+    #early-access #access-form button {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1.5rem 6rem;
+        margin-top: 2rem;
+        border-radius: 3rem;
+    }
+    #early-access #access-form input {
+        width: 100%;
+        padding: 1.5rem 6rem;
+        border-radius: 3rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    #early-access {
+        width: 90%;
+    }
+    #early-access #access-form {
+        flex-direction: column;
+    }
+    #early-access #access-form button {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1.5rem 6rem;
+        margin-top: 2rem;
+        border-radius: 3rem;
+    }
+    #early-access #access-form input {
+        width: 100%;
+        padding: 1.5rem 6rem;
+        border-radius: 3rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #early-access #access-form button {
+        width: 35%;
+        padding: 1rem 0rem;
+        font-size: 1.4rem;
+        background: hsl(198, 60%, 50%);
+        color: #fff;
+        font-size: 1rem;
+        border-radius:2rem;
+        border: none;
+        transition: .2s;
+        cursor: pointer;
+    }
+}
 
 /*
 
@@ -308,7 +510,10 @@ footer {
     box-sizing: border-box;
 }
 #location {
-    max-width: 25%;
+    width: 25%;
+}
+#contact-footer p{
+    margin-bottom: 1.5rem;
 }
 #links-footer {
     display: flex;
@@ -345,4 +550,33 @@ footer {
     color: hsl(176, 68%, 64%);
     border-color: hsl(176, 68%, 64%);
     transition: .2s;
+}
+
+@media screen and (max-width: 400px) {
+    .footer-details {
+        flex-direction: column;
+    }
+    #location {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    #contact-footer {
+        margin-bottom: 4rem;
+    }
+    #links-footer {
+        flex-direction: column;
+        margin-bottom: 7rem;
+    }
+    #links-footer div:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    #social-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
