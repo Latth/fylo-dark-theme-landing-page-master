@@ -44,14 +44,14 @@ section {
     font-family: 'Open Sans', sans-serif;
     padding: 10rem 0;
 }
-@media screen and (max-width: 400px) {
-    section {
-        padding: 7rem 0;
-    }
-}
 @media screen and (max-width: 900px) {
     section {
         padding: 9rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    section {
+        padding: 7rem 0;
     }
 }
 
@@ -144,7 +144,15 @@ WELCOME SEC
     background: hsl(176, 68%, 64%);
     transition: .2s;
 }
-
+@media screen and (max-width: 900px) {
+    #welcome a{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1.5rem 8rem;
+        margin-top: 3rem;
+        border-radius: 3rem;
+    }
+}
 @media screen and (max-width: 400px) {
     #main-img {
         width: 100%;
@@ -156,16 +164,6 @@ WELCOME SEC
         font-size: 2rem;
         margin: 2rem 0;
     }
-    #welcome a{
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 1.5rem 8rem;
-        margin-top: 3rem;
-        border-radius: 3rem;
-    }
-}
-
-@media screen and (max-width: 900px) {
     #welcome a{
         font-size: 1.5rem;
         font-weight: bold;
@@ -210,6 +208,13 @@ ABOUT SECTION
 .bottom-abt {
     margin-top: 10rem;
 }
+@media screen and (max-width: 900px) {
+    #about .about-item {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+}
 @media screen and (max-width: 400px) {
     #about {
         padding-top: 10rem;
@@ -232,14 +237,6 @@ ABOUT SECTION
         width: 100%;
     }
     
-}
-
-@media screen and (max-width: 900px) {
-    #about .about-item {
-        width: 100%;
-        text-align: center;
-        color: #fff;
-    }
 }
 
 /* 
@@ -338,17 +335,6 @@ PRODUCTİVE SECTİON
     left: -1rem;
     z-index: 3;
 }
-
-@media screen and (max-width: 400px) {
-    #comments .container {
-        flex-direction: column;
-    }
-    .comment-item {
-        width: 90%;
-        margin: auto;
-        margin-bottom: 3rem;
-    }
-}
 @media screen and (max-width: 900px) {
     #comments .container {
         flex-direction: column;
@@ -362,6 +348,17 @@ PRODUCTİVE SECTİON
         margin-bottom: 0rem;
     }
 }
+@media screen and (max-width: 400px) {
+    #comments .container {
+        flex-direction: column;
+    }
+    .comment-item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+}
+
 
 
 /* 
@@ -429,27 +426,8 @@ Access form
     margin-top: .2rem;
     visibility: hidden;
 }
-@media screen and (max-width: 400px) {
-    #early-access {
-        width: 90%;
-    }
-    #early-access #access-form {
-        flex-direction: column;
-    }
-    #early-access #access-form button {
-        width: 100%;
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 1.5rem 6rem;
-        margin-top: 2rem;
-        border-radius: 3rem;
-    }
-    #early-access #access-form input {
-        width: 100%;
-        padding: 1.5rem 6rem;
-        border-radius: 3rem;
-    }
-}
+
+
 @media screen and (max-width: 900px) {
     #early-access {
         width: 90%;
@@ -471,19 +449,25 @@ Access form
         border-radius: 3rem;
     }
 }
-
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 400px) {
+    #early-access {
+        width: 90%;
+    }
+    #early-access #access-form {
+        flex-direction: column;
+    }
     #early-access #access-form button {
-        width: 35%;
-        padding: 1rem 0rem;
-        font-size: 1.4rem;
-        background: hsl(198, 60%, 50%);
-        color: #fff;
+        width: 100%;
         font-size: 1rem;
-        border-radius:2rem;
-        border: none;
-        transition: .2s;
-        cursor: pointer;
+        font-weight: bold;
+        padding: 1.5rem 6rem;
+        margin-top: 2rem;
+        border-radius: 3rem;
+    }
+    #early-access #access-form input {
+        width: 100%;
+        padding: 1.5rem 6rem;
+        border-radius: 3rem;
     }
 }
 
@@ -553,6 +537,9 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+    footer{
+        padding-top: 18rem;
+    }
     .footer-details {
         flex-direction: column;
     }
